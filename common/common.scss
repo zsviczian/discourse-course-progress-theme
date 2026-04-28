@@ -1,0 +1,63 @@
+/* =========================================
+   1. MAIN SIDEBAR COURSE BADGES
+   ========================================= */
+
+/* Ensure the link acts as a flexbox ONLY if it has a badge */
+a.sidebar-section-link.has-course-badge {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+/* Force text to truncate to protect the badge */
+a.sidebar-section-link.has-course-badge .sidebar-section-link-content-text {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+/* The Badge Container */
+.custom-sidebar-badge {
+    flex-shrink: 0;
+    margin-left: 6px;
+    border: 1px solid var(--primary-low, #e2e8f0);
+    border-radius: 4px;
+    padding: 1px 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    background-color: var(--secondary, #ffffff);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    line-height: 1;
+}
+
+/* Internal Badge Colors */
+.badge-actionable { transition: all 0.2s ease; }
+.badge-separator { color: var(--primary-low-mid, #cbd5e1); font-weight: normal; }
+.badge-total { color: var(--primary-medium, #64748b); }
+
+
+/* =========================================
+   2. DOCS (COURSE) SIDEBAR CHECKMARKS
+   ========================================= */
+
+/* Ensure the docs link acts as a flexbox */
+a.docs-sidebar-nav-link.has-course-checkmark {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Push the checkmark to the far right */
+.course-lesson-completed {
+    margin-left: auto;
+    color: var(--success, #00a94f); /* Discourse native success green */
+    display: flex;
+    align-items: center;
+    font-size: 0.85em; /* Scales the checkmark down slightly */
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Course Progress UI",
+  "component": true,
+  "authors": "zsviczian",
+  "about_url": "https://github.com/zsviczian/discourse-course-progress-theme",
+  "license_url": "https://opensource.org/licenses/MIT",
+  "theme_version": "1.0"
+}
