@@ -37,8 +37,10 @@ export default apiInitializer((api) => {
                 if (courses[categoryId]) {
                     const courseInfo = courses[categoryId];
                     const readCount = courseInfo.read_count;
-                    const totalCount = courseInfo.total_topics;
-                    
+                    let totalCount = courseInfo.total_topics;
+
+                    totalCount = Math.max(0, totalCount - settings.non_course_files);
+
                     // 1. Clean up existing indicators to prevent duplicates on state change
                     const standardDot = link.querySelector('.sidebar-section-link-suffix.unread, .custom-sidebar-dot');
                     const existingBadge = link.querySelector('.custom-sidebar-badge');
