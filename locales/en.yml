@@ -2,4 +2,4 @@ en:
   theme_metadata:
     description: "Transforms your sidebar into an LMS-style progress tracker with completion badges and checkmarks. ⚠️ Requires the backend plugin: https://github.com/zsviczian/discourse-course-progress and the Discourse Doc Categories plugin."
     settings:
-      non_course_files: "Number of non-course files (e.g., About and Syllabus) to deduct from the total lessons. Set visibility of About and the Index Topic to hidden so the user does not accidentaly mark it read by opening it."
+      non_course_files: "Number of non-course files (e.g., About and Syllabus) to deduct from the total lessons. Set visibility of About and the Index Topic to hidden so the user does not accidentally mark it read by opening it."
